@@ -1,0 +1,126 @@
+body {
+    background-color: #282828;
+    font-family: 'iMWritingDuo Nerd Font', 'Courier New', Courier, monospace;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.converter {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+    width: 400px; /* Adjust width as needed */
+}
+
+.converter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://source.unsplash.com/1600x900/?abstract,technology");
+    background-size: cover;
+    filter: blur(8px);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 80px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: #090909;
+    color: #f0f0f0;
+    text-align: center;
+    font-family: 'iMWritingDuo Nerd Font', 'Courier New', Courier, monospace;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-area span {
+    margin-right: 10px; /* Adds 10px right margin */
+}
+
+
+.result-area {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#result {
+    color: #f0f0f0;
+}
+
+button {
+    background-color: rgba(10, 10, 10, 0.75);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'iMWritingDuo Nerd Font', 'Courier New', Courier, monospace;;
+}
+
+button:hover {
+    background-color: rgba(63, 63, 63, 0.75);
+}
+
+select {
+    font-family: 'iMWritingDuo Nerd Font', 'Courier New', Courier, monospace;
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px;
+    padding-bottom: 7px; /* Add some space at the bottom */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: #f0f0f0;
+
+    appearance: none; /* Hide default arrow */
+    -webkit-appearance: none; /* Hide arrow for Safari */
+    -moz-appearance: none; /* Hide arrow for Firefox */
+
+    background-color: #090909;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    background-size: 100% 2px; /* Make the gradient thin */
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+select option {
+    color: #F5F5F5; /* Text color: 245, 245, 245 (light gray) */
+    background-color: #0E0E0E; /* Background color: 14, 14, 14 (dark gray) */
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select::-ms-expand,
+select:focus::-ms-expand,
+select::-ms-value {
+    color: #f0f0f0; /* Arrow color */
+}
+
+
